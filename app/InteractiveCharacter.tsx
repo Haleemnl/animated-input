@@ -252,9 +252,9 @@ export default function InteractiveCharacter() {
 
                 {/* Status Text */}
                 <div className="text-center mb-6 h-6">
-                    {emotion === "bored" && <p className="text-gray-500 text-sm">I'm bored... say something!</p>}
+                    {emotion === "bored" && <p className="text-gray-500 text-sm">{`I'm bored... say something!`}</p>}
                     {emotion === "thinking" && <p className="text-blue-600 text-sm font-medium">Hmm, interesting...</p>}
-                    {emotion === "happy" && <p className="text-green-600 text-sm font-medium">Yay! That's awesome!</p>}
+                    {emotion === "happy" && <p className="text-green-600 text-sm font-medium">{`Yay! That's awesome!`}</p>}
                 </div>
 
                 {/* Input Form */}
