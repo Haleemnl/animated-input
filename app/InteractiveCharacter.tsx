@@ -215,12 +215,12 @@ export default function InteractiveCharacter() {
         if (input.trim()) {
             setEmotion("happy")
             setSubmitted(true)
-            // Reset after 2 seconds
+            // Reset after 6 seconds
             setTimeout(() => {
                 setInput("")
                 setEmotion("bored")
                 setSubmitted(false)
-            }, 2000)
+            }, 6000)
         }
     }
 
