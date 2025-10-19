@@ -186,6 +186,7 @@
 
 "use client"
 
+import Image from "next/image"
 import type React from "react"
 import { useState } from "react"
 
@@ -240,10 +241,12 @@ export default function InteractiveCharacter() {
             <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full">
                 {/* Character Display */}
                 <div className="flex justify-center mb-8">
-                    <img
+                    <Image
                         src={getCharacterImage() || "/placeholder.svg"}
                         alt={`Character looking ${emotion}`}
                         className="w-64 h-64 object-cover rounded-lg"
+                        width={256}
+                        height={256}
                     />
                 </div>
 
